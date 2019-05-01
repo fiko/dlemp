@@ -19,7 +19,7 @@ A basic LEMP stack for web development build for Docker. DLEMP stands for:
 
 4. Open your browser and go to this link `http://localhost` or `http://YOUR_SERVER_IP`
 
-5. Customize your information of server such as MYSQL_ROOT_PASSWORD, MYSQL
+5. Customize your information of server such as `VIRTUAL_HOST`, `MYSQL_ROOT_PASSWORD`, `MYSQL_USER`, `MYSQL_PASSWORD`, etc.
 
 ## Repository Map
 
@@ -42,3 +42,13 @@ dlemp/
 ├── docker-compose.yml
 └── README.md
 ```
+
+## Contributing
+
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+Please make sure to update tests as appropriate.
+
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/) &copy; 2019
