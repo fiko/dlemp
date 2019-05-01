@@ -1,0 +1,42 @@
+version: "3"
+
+services:
+    server:
+        image: fikoborizqy/nginx-php
+        network_mode: bridge
+        ports:
+            - 80:80
+            - 443:443
+        volumes:
+            - ./public_html/:/var/www/html/
+            - ./nginx/logs/:/var/log/nginx/
+            - ./nginx/conf.d/:/etc/nginx/conf.d/
+        links:
+            - mysql
+        # You can change this virtual host to something else which you prefer such as project.test etc...
+        environment:
+            VIRTUAL_HOST: localhost
+
+    mysql:
+        image: mariadb
+        network_mode: bridge
+        ports:
+            - 3306:3306
+        volumes:
+            # This is where database will be stored.
+            - ./mysql/:/var/lib/mysql
+        environment:
+            # MySQL password for root user
+            - MYSQL_ROOT_PASSWORD=root
+            # Create Non-root account by setting up username and password. You can remove or change it.
+            - MYSQL_USER=admin
+            - MYSQL_PASSWORD=admin
+
+    # phpmyadmin needed to control your database, but you can remove it, and move to database manager app.
+    phpmyadmin:
+        image: phpmyadmin/phpmyadmin
+        network_mode: bridge
+        ports:
+            - 8080:80
+        links:
+            - mysql:db

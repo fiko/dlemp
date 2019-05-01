@@ -1,0 +1,57 @@
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+body {
+	font-size: 16px;
+	margin-top: 48px;
+	line-height: 1.5;
+}
+
+a {
+	color: #2196F3;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+.white-box {
+	border: solid 1px #cdcdcd;
+	border-radius: 8px;
+	max-width: 640px;
+	margin: auto;
+	padding: 12px;
+	padding: 10px 24px;
+}
+
+.white-box h1 {
+	margin: 16px 0;
+}
+
+.white-box p {
+	margin: 16px 0;
+	padding: 0 0;
+}
+
+hr {
+	border-width: 0;
+	height: 1px;
+	background-color: #cdcdcd;
+}
+
+footer {
+	margin: 26px 0;
+	color: #343434;
+}
+
+pre {
+	background-color: #f5f5f5;
+	border: solid 1px #e5e5e5;
+	border-radius: 4px;
+	padding: 8px;
+	max-width: 100%;
+	width: 100%;
+	overflow-x: auto;
+}
