@@ -6,7 +6,7 @@ services:
         network_mode: bridge
         ports:
             - 80:80
-            - 443:443
+            #- 443:443
         volumes:
             - ./public_html/:/var/www/html/
             - ./nginx/logs/:/var/log/nginx/
@@ -32,11 +32,11 @@ services:
             - MYSQL_USER=admin
             - MYSQL_PASSWORD=admin
 
-    # phpmyadmin needed to control your database, but you can remove it, and move to database manager app.
-    phpmyadmin:
-        image: phpmyadmin/phpmyadmin
-        network_mode: bridge
-        ports:
-            - 8080:80
-        links:
-            - mysql:db
+    # optional if you want to have phpmyadmin to control your database
+    #phpmyadmin:
+    #    image: phpmyadmin/phpmyadmin
+    #    network_mode: bridge
+    #    ports:
+    #        - 8080:80
+    #    links:
+    #        - mysql:db
