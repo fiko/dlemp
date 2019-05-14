@@ -21,6 +21,8 @@ A basic LEMP stack for web development build for Docker. DLEMP stands for:
 
 5. Customize your information of server such as `VIRTUAL_HOST`, `MYSQL_ROOT_PASSWORD`, `MYSQL_USER`, `MYSQL_PASSWORD`, etc.
 
+(Optional): if you wish to access your docker project via domain **example.test** instead of **localhost:13001**. You can follow this instruction: [https://github.com/fikoborizqy/dlemp/wiki/Access-Domain-Instead-of-Port](https://github.com/fikoborizqy/dlemp/wiki/Access-Domain-Instead-of-Port)
+
 ## Repository Map
 
 Here's the default files you will get once you clone it to your computer:  
@@ -31,7 +33,7 @@ dlemp/
 ├── nginx/
 │   └── conf.d/
 │       └── default.conf
-└── public_html/
+├── public_html/
 │   ├── css/
 │   │   └── style.css
 │   ├── connect.php
