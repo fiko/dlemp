@@ -4,13 +4,13 @@ services:
     server:
         image: fikoborizqy/nginx-php
         network_mode: bridge
-        ports:
-            - 80:80
-            #- 443:443
+        #ports:
+        #    - 80:80
+        #    - 443:443
         volumes:
             - ./public_html/:/var/www/html/
             - ./nginx/logs/:/var/log/nginx/
-            - ./nginx/conf.d/:/etc/nginx/conf.d/
+            - ./nginx-server.conf:/etc/nginx/conf.d/default.conf
         links:
             - mysql
         # You can change this virtual host to something else which you prefer such as project.test etc...

@@ -30,9 +30,6 @@ Here's the default files you will get once you clone it to your computer:
 
 ```
 dlemp/
-├── nginx/
-│   └── conf.d/
-│       └── default.conf
 ├── public_html/
 │   ├── css/
 │   │   └── style.css
@@ -42,6 +39,7 @@ dlemp/
 │   └── server.php
 ├── .gitignore
 ├── docker-compose.yml
+├── nginx-server.conf
 └── README.md
 ```
 
