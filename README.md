@@ -21,7 +21,7 @@ A basic LEMP stack for web development build for Docker. DLEMP stands for:
 
 5. Customize your information of server such as `VIRTUAL_HOST`, `MYSQL_ROOT_PASSWORD`, `MYSQL_USER`, `MYSQL_PASSWORD`, etc on `docker-compoe.yml` file.
 
-### Multiple Sites by Domain(Optional)
+## Multiple Sites by Domain(Optional)
 
 If you wish to access your docker project via domain **example.test** instead of **localhost:13001**. You can follow this steps.
 
