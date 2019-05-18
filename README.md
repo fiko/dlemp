@@ -82,7 +82,7 @@ server_name example.test;
 
 4. Run docker nginx proxy server on terminal. (Run it only once!)
 ```
-$ docker rm fikoborizqy-proxy; docker run --name=fikoborizqy-proxy --restart=always --net=bridge -d -p 80:80 -v /var/run/docker.sock:/tmp/docker.sock:ro jwilder/nginx-proxy
+$ docker run --name=fikoborizqy-proxy --restart=always --net=bridge -d -p 80:80 -v /var/run/docker.sock:/tmp/docker.sock:ro jwilder/nginx-proxy
 ```
 
 5. Run your site:
